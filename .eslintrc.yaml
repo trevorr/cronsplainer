@@ -1,0 +1,42 @@
+env:
+  es6: true
+  node: true
+extends:
+  - 'eslint:recommended'
+parserOptions:
+  ecmaVersion: 2018
+  sourceType: module
+rules:
+  jsx-quotes:
+    - error
+    - prefer-double
+  linebreak-style:
+    - error
+    - unix
+  no-console:
+    - warn
+  no-multiple-empty-lines:
+    - error
+    - max: 1
+      maxBOF: 0
+      maxEOF: 0
+  no-tabs:
+    - error
+  no-trailing-spaces:
+    - error
+  no-unused-vars:
+    - error
+    - argsIgnorePattern: ^_
+      ignoreRestSiblings: true
+  object-shorthand:
+    - error
+    - always
+  prefer-const:
+    - error
+    - destructuring: all
+  quotes:
+    - error
+    - single
+  semi:
+    - error
+    - always
